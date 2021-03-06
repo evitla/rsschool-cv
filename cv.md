@@ -65,3 +65,13 @@ def validate_user(username, minlen):
         return False
     return True
 ```
+
+### Experience
+
+### Education
+**Lomonosov Moscow State University**, master of Physics
+
+**Online Courses**:
+* [Deep Learning](https://coursera.org/share/14063aa1f6c7abb25be15d55189681c9)
+* [Python for Everybody](https://coursera.org/share/d9a2a3350c04671b425001bb38486941)
+* [Google IT Automation with Python](https://coursera.org/share/a56e6265c6abd4c0295bdab430f1df90)
