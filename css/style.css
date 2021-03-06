@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 90%;
+  margin-left: 40px;
+}
+
+main {
+  width: 90%;
+  margin: auto 10px;
+}
+
+section {
+  display: grid;
+  grid-template-columns: minmax(170px, 15%) 1fr;
+}
+
+aside {
+  width: 80%;
+  margin: 10px 0;
+}
+
+h2,
+h3 {
+  color: #0b212c;
+}
+
+h3.center {
+  display: block;
+  margin: auto 40px;
+  text-align: right;
+}
+
+img.responsive {
+  width: 60%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+ul.contact {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+ul {
+  padding-left: 15px;
+}
+
+p {
+  margin: 10px auto 4px;
+}
+
+a {
+  text-decoration: none;
+  color: #118ab2;
+}
