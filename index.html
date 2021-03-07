@@ -5,85 +5,116 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CV</title>
+
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <main>
-    <section>
-      <img class="responsive" src="images/logo.png" alt="logo">
-      <aside>
-        <h2 class="name">Dinmukhamed Sailaubek</h2>
-        <ul class="contact">
+    <aside class="left-side">
+      <figure>
+        <img class="avatar" src="images/self.png" alt="avatar">
+      </figure>
+      <section class="self">
+        <h3>Dinmukhamed Sailaubek</h3>
+        <p class="profession">Nuclear Physicist</p>
+      </section>
+      <section class="contact">
+        <h2>Contact</h2>
+        <ul>
           <li>Nur-Sultan, Kazakhstan</li>
-          <li><a href="mailto:s.dinmuhamed@gmail.com">s.dinmuhamed@gmail.com</a></li>
-          <li><a href="tel:+77086233206">+7 (708) 623-32-06</a></li>
+          <li>s.dinmuhamed@gmail.com</li>
+          <li>+7 (708) 623-32-06</li>
         </ul>
-      </aside>
-    </section>
-    <section>
-      <h3 class="center">About me</h3>
-      <aside>
-        My name is Dinmukhamed Sailaubek. I've been teaching theoretical physics at the university since 2017, 
-        after graduating from my master degree. Also I work in a small research team and I'm looking for a role 
-        where I can grow and continue to learn from other experienced team members.
-      </aside>
-    </section>
-    <section>
-      <h3 class="center">Skills</h3>
-      <aside>
-        <table border="0">
+      </section>
+    </aside>
+    <aside class="right-side">
+      <section class="info">
+        <h2>ABOUT ME</h2>
+        <p>
+          My name is Dinmukhamed Sailaubek. I've been teaching theoretical physics at the university since 2017, 
+          after graduating from my master degree. Also I work in a small research team and I'm looking for a role 
+          where I can grow and continue to learn from other experienced team members.
+        </p>
+      </section>
+      <section class="info">
+        <h2>EDUCATION</h2>
+        <h3 class="edu">Lomonosov Moscow State University</h3>
+        <p><time>2015</time> - <time>2017</time> | Master of Physics</p>
+        <h3 class="edu">DeepLearning.AI</h3>
+        <p>October - December, <time>2020</time> | Deep Learning Specialization Certificate</p>
+        <h3 class="edu">University of Michigan</h3>
+        <p>October - November, <time>2020</time> | Python for Everybody Specialization Certificate</p>
+        <h3 class="edu">Google</h3>
+        <p><time>2020</time> - <time>2021</time> | Google IT Automation with Python Specialization Certificate</p>
+      </section>
+      <section class="info">
+        <h2>EXPERIENCE</h2>
+        <h3 class="edu">Joint Institute for Nuclear Research</h3>
+        <p><time>2014</time> - <time>2015</time> | Laboratory Assistant</p>
+        <h3 class="edu">Gumilyov Eurasian National University</h3>
+        <p>since <time>2017</time> | Senior Lecturer</p>
+      </section>
+      <section class="info">
+        <h2>CODE EXAMPLE</h2>
+<pre class="python-code">
+<mark class="key-word">import</mark> re
+
+<mark class="key-word">def</mark> <mark class="function">validate_user</mark>(<mark class="var">username</mark>, <mark class="var">minlen</mark>):
+    <mark class="string">"""Checks if the received username matches the required conditions."""</mark>
+    <mark class="key-word">if</mark> <mark class="function">type</mark>(username) != str&colon;
+        <mark class="key-word">raise</mark> <mark class="function">TypeError</mark>(<mark class="string">"username must be a string"</mark>)
+    <mark class="key-word">if</mark> minlen &lt; <mark class="var">1</mark>&colon;
+        <mark class="key-word">raise</mark> <mark class="function">ValueError</mark>(<mark class="string">"minlen must be at least 1"</mark>)
+    <mark class="comment"># Usernames can't be shorter than minlen</mark>
+    <mark class="key-word">if</mark> <mark class="function">len</mark>(username) &lt; minlen&colon;
+        <mark class="key-word">return</mark> <mark class="var">False</mark>
+    <mark class="comment"># Usernames can only use letter, numbers, dots and underscores</mark>
+    <mark class="key-word">if not</mark> re.<mark class="function">match</mark>(<mark class="string">"^[a-z0-9._]*$"</mark>, username)&colon;
+        <mark class="key-word">return</mark> <mark class="var">False</mark>
+    <mark class="comment"># Usernames can't begin with a number</mark>
+    <mark class="key-word">if</mark> username[<mark class="var">0</mark>].<mark class="function">isnumeric</mark>():
+        <mark class="key-word">return</mark> <mark class="var">False</mark>
+    <mark class="key-word">return</mark> <mark class="var">True</mark>
+</pre>
+      </section>
+      <section class="info">
+        <h2>SKILLS</h2>
+        <table>
           <tr>
-            <td style="width: 150px"><b>Latex</b></td>
-            <td><img src="https://progress-bar.dev/85/?suffix&width=150"></td>
+            <td style="width: 150px"><strong>Latex</strong></td>
+            <td><img class="skill-bar" src="https://progress-bar.dev/85/?suffix&width=250" alt="bar"></td>
           </tr>
           <tr>
-            <td><b>Python</b></td>
-            <td><img src="https://progress-bar.dev/80/?suffix&width=150"></td>
+            <td><strong>Python</strong></td>
+            <td><img class="skill-bar" src="https://progress-bar.dev/80/?suffix&width=250" alt="bar"></td>
           </tr>
           <tr>
-            <td><b>HTML</b></td>
-            <td><img src="https://progress-bar.dev/70/?suffix&width=150"></td>
+            <td><strong>HTML</strong></td>
+            <td><img class="skill-bar" src="https://progress-bar.dev/70/?suffix&width=250" alt="bar"></td>
           </tr>
           <tr>
-            <td><b>CSS</b></td>
-            <td><img src="https://progress-bar.dev/60/?suffix&width=150"></td>
+            <td><strong>CSS</strong></td>
+            <td><img class="skill-bar" src="https://progress-bar.dev/60/?suffix&width=250" alt="bar"></td>
           </tr>
           <tr>
-            <td><b>JavaScript</b></td>
-            <td><img src="https://progress-bar.dev/55/?suffix&width=150"></td>
+            <td><strong>JavaScript</strong></td>
+            <td><img class="skill-bar" src="https://progress-bar.dev/55/?suffix&width=250" alt="bar"></td>
           </tr>
           <tr>
-            <td><b>Git</b></td>
-            <td><img src="https://progress-bar.dev/50/?suffix&width=150"></td>
+            <td><strong>Git</strong></td>
+            <td><img class="skill-bar" src="https://progress-bar.dev/50/?suffix&width=250" alt="bar"></td>
           </tr>
           <tr>
-            <td><b>C++</b></td>
-            <td><img src="https://progress-bar.dev/50/?suffix&width=150"></td>
+            <td><strong>C++</strong></td>
+            <td><img class="skill-bar" src="https://progress-bar.dev/50/?suffix&width=250" alt="bar"></td>
           </tr>
           <tr>
-            <td><b>English</b></td>
-            <td>A2</td>
+            <td><strong>English</strong></td>
+            <td>A2 level</td>
           </tr>
         </table>
-      </aside>
-    </section>
-    <section>
-      <h3 class="center">Education</h3>
-      <aside>
-        <p>
-          <strong>Lomonosov Moscow State University</strong>
-          <br>
-          <em>master of Physics</em>
-        </p>
-        <p><strong>Online Courses:</strong></p>
-        <ul>
-          <li><a href="https://coursera.org/share/14063aa1f6c7abb25be15d55189681c9">Deep Learning</a></li>
-          <li><a href="https://coursera.org/share/d9a2a3350c04671b425001bb38486941">Python for Everybody</a></li>
-          <li><a href="https://coursera.org/share/a56e6265c6abd4c0295bdab430f1df90">Google IT Automation with Python</a></li>
-        </ul>
-      </aside>
-    </section>
+      </section>
+    </aside>
   </main>
-
 </body>
 </html>
