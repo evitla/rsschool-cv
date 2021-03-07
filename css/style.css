@@ -1,61 +1,83 @@
-body {
-  margin: 0;
-  padding: 0;
+:root {
+  --color-light: #fefae0;
+  --color-dark: #333533;
 }
 
-header {
-  width: 90%;
-  margin-left: 40px;
-}
-
-main {
-  width: 90%;
-  margin: 50px auto;
-}
-
-section {
-  display: grid;
-  grid-template-columns: minmax(170px, 15%) 1fr;
-}
-
-aside {
-  width: 80%;
-  margin: 10px 0;
-}
-
-h2,
-h3 {
-  color: #0b212c;
-}
-
-h3.center {
-  display: block;
-  margin: auto 40px;
-  text-align: right;
-}
-
-img.responsive {
-  width: 60%;
-  height: auto;
-  display: block;
-  margin: auto;
-}
-
-ul.contact {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-ul {
-  padding-left: 15px;
-}
-
+body,
+ul,
 p {
-  margin: 10px auto 4px;
+  margin: 0;
+  padding: 0;
 }
 
-a {
-  text-decoration: none;
-  color: #118ab2;
+/* START MAIN */
+main {
+  display: grid;
+  grid-template-columns: minmax(300px, 30%) 1fr;
+  background-color: var(--color-light);
 }
+
+/* START LEFT SIDE */
+.left-side {
+  padding: 50px 0;
+  position: relative;
+  background-color: var(--color-dark);
+  color: var(--color-light);
+}
+
+figure {
+  display: grid;
+  place-items: center;
+}
+
+img.avatar {
+  width: 35%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.self {
+  display: grid;
+  place-items: center;
+  font-size: 1.4em;
+}
+
+.contact {
+  position: absolute;
+  bottom: 50px;
+  margin-left: 70px;
+}
+
+ul { list-style-type: none; }
+
+li { margin-bottom: 10px; }
+/* END LEFT SIDE */
+
+/* START RIGHT SIDE */
+.right-side {
+  margin: 50px 70px;
+  width: calc(100% - 200px);
+  background-color: var(--color-light);
+  color: var(--color-dark);
+}
+
+section.info:not(:last-child) { margin-bottom: 50px; }
+
+h3.edu { margin: 15px 0 0 0; }
+
+p { line-height: 26px; }
+
+pre.python-code { 
+  font-size: 1.2em;
+  line-height: 20px;
+  overflow-x: auto;
+}
+
+pre.python-code > mark { background-color: var(--color-light); }
+pre.python-code > mark.key-word { color: #e63946; }
+pre.python-code > mark.string { color: #59ac59; }
+pre.python-code > mark.function { color: #0077b6; }
+pre.python-code > mark.var { color: #f77f00; }
+pre.python-code > mark.comment { color: #a5a58d; }
+/* END RIGHT SIDE */
+/* END MAIN */
